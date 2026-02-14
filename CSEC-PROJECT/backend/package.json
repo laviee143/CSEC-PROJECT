@@ -1,0 +1,56 @@
+{
+    "name": "asash-ai-backend",
+    "version": "0.1.0",
+    "description": "Premium RAG-powered Backend for አሳሽ AI - ASTU Administrative Workflow Support",
+    "main": "dist/server.js",
+    "scripts": {
+        "start": "node dist/server.js",
+        "dev": "nodemon --watch './' --ext 'ts,js,json' --exec \"ts-node --transpile-only server.ts\"",
+        "build": "tsc",
+        "type-check": "tsc --noEmit",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "type": "commonjs",
+    "keywords": [
+        "express",
+        "mongodb",
+        "jwt",
+        "ai",
+        "chatbot",
+        "campus-safety"
+    ],
+    "author": "ASTU Team",
+    "license": "ISC",
+    "dependencies": {
+        "@google/generative-ai": "^0.1.3",
+        "axios": "^1.6.5",
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "express-validator": "^7.0.1",
+        "jsonwebtoken": "^9.0.3",
+        "mongoose": "^8.0.3",
+        "multer": "^2.0.2",
+        "pdf-parse": "^1.1.1",
+        "voyageai": "^0.1.0"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.6",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/mongoose": "^5.11.96",
+        "@types/multer": "^2.0.0",
+        "@types/node": "^25.2.3",
+        "mongodb-memory-server": "^8.16.1",
+        "nodemon": "^3.0.2",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.9.3"
+    },
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
+    }
+}
